@@ -10,8 +10,8 @@ DEBUG = 1
 
 # change these as desired
 clockpin = 22
-misopin = 25
-mosipin = 24
+misopin = 24
+mosipin = 25
 cspin = 23
 holdpin = 27
 wppin = 26
