@@ -118,7 +118,7 @@ verify = spicmd(0x35, 8, 8)
 print "Status 2 now ", format(verify, '02x')
 
 if(verify & 0x02):
-    print "Write of status2 register failed!"
+    print "Readback of status2 register failed! If you have HOLD connected to CS this is normal."
 
 
 # hang out and do nothing for a half second
