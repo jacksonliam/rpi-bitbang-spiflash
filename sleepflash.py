@@ -98,8 +98,10 @@ time.sleep(1)
 jdec2 = spicmd(0x9F, 8, 24)  
 print "JDEC ID Now ", format(jdec2, '06x')
 
-if(jdec1 == jdec2):
-    print "Flash doesn't look asleep."
+if(0xffffff == jdec2 or 0x000000 == jdec2):
+    print "Flash looks asleep."
+else:
+    print "Flash doesnt look asleep"
 
 # hang out and do nothing for a half second
 time.sleep(0.5)
